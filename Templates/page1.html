@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Predictive Analyzer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+          position: relative;
+          overflow: hidden;
+          background-color:#6a0e6d;
+        }
+        
+        .topnav a {
+          float: left;
+          color:#6a0e6d;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 30px;
+        }
+        
+        .topnav a:hover {
+          background-color: #6a0e6d;
+          color: #6a0e6d;
+        }
+        
+        .topnav a.active {
+          background-color: #6a0e6d;
+          color: white;
+        }
+        
+        .topnav-centered a {
+          float: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        
+        .topnav-right {
+          float: right;
+        }
+        
+        /* Responsive navigation menu (for mobile devices) */
+        @media screen and (max-width: 600px) {
+          .topnav a, .topnav-right {
+            float: none;
+            display: block;
+          }
+          
+          .topnav-centered a {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+          }
+        }
+        </style>
+</head>
+<body style="background-color:#ac4caf ;">
+<header>
+  	<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <a class="navbar-brand" href="#" style="text-align:center;">Predictive Analyzer</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">Join prime</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          English
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">English</a>
+          <a class="dropdown-item" href="#">Hindi</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Select Language</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div></nav>-->
+
+  <!-- Top navigation -->
+<div class="topnav">
+
+    <!-- Centered link -->
+    <div class="topnav-centered">
+      <a href="#home" class="active">Predictive Analysis of Vehicle's Market Price</a>
+    </div>
+    <!--
+    Left-aligned links (default)-->
+    <a href="#news">news</a>
+    <a href="#contact">contact</a>
+    
+    <!--Right-aligned links -->
+    <div class="topnav-right">
+      <a href="#search">search</a>
+      <a href="#about">about</a>
+    </div>
+    
+    
+  </div>
+  <!--
+  <div style="padding-left:16px">
+    <h2>Responsive Top Navigation with Centered and Right-Aligned Links</h2>
+    <p>Resize the browser window to see the responsive effect.</p>
+  </div>
+  -->
+</header>
+
+
+<!--
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+-->
+ 
+ <section style="background-color:#ac4caf ;" >
+  <!--
+  <div class="container">
+    <h1 class="text-center text-capitalize pt-5">Enter your Vehicle Details</h1>
+    <hr class="w-25 mx-auto pt-5"> 
+
+    
+    <div class="row text-center mb-5">-->
+    <!--    
+        <div class="container">
+            <h2>Basic Card</h2>
+            <div class="card">
+              <div class="card-body">Basic card</div>
+            </div>
+          </div>
+          <div class="container">
+            <h2>Basic Card</h2>
+            <div class="card">
+              <div class="card-body">Basic card</div>
+            </div>
+          </div>
+    -->
+    <!--
+      <div class="col-lg-6 col-md-6 col-18">   
+        <div class="card mb-5" >
+           <img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image">
+           <div class="card-body">
+            <h4 class="card-title">Two-Wheeler</h4>
+            <p class="card-text text-justify"></p>
+            <a href="https://www.amazon.in/gp/product/B08159D7JH" class="btn btn-primary">Let's Go</a>
+           </div>
+        </div>
+      </div> 
+
+      <div class="col-lg-6 col-md-6 col-18">   
+        <div class="card mb-5" >
+           <img class="card-img-top" src="data:image/png;base64,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" alt="Card image">
+           <div class="card-body">
+            <h4 class="card-title">Four-Wheeler</h4>
+            <p class="card-text text-justify"></p>
+            <a href="https://www.flipkart.com/asus-rog-strix-g-core-i5-9th-gen-8-gb-1-tb-hdd-256-gb-ssd-windows-10-home-4-graphics-nvidia-geforce-gtx-1650-g531gt-bq024t-gaming-laptop/p/itmfg9yrrazqt7dk?pid=COMFG9YREHZ9VBKH&lid=LSTCOMFG9YREHZ9VBKH8WVPW9&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ACOMFMGBP4QYYXEAS%3Bl%3ALSTCOMFMGBP4QYYXEASARX3JW%3Bpt%3App%3Buid%3A944f8d9e-0c17-5eda-e895-e1e5d7f22fe0%3B.COMFG9YREHZ9VBKH&ppt=pp&ppn=pp&ssid=kkgd7wzqts0000001590241127605&otracker=pp_reco_Similar%2BProducts_14_Similar%2BProducts_COMFG9YREHZ9VBKH_productRecommendation%2Fsimilar_13&otracker1=pp_reco_NA_productRecommendation%2Fsimilar_Similar%2BProducts_DESKTOP_HORIZONTAL_productCard_cc_14_NA_view-all&cid=COMFG9YREHZ9VBKH" class="btn btn-primary">Let's Go</a>
+           </div>
+        </div>
+      </div>-->
+     <!--
+      <div class="col-lg-4 col-md-4 col-12">   
+        <div class="card mb-5" >
+           <img class="card-img-top" src="hp.png" alt="Card image">
+           <div class="card-body">
+            <h4 class="card-title">Hp Pavillion</h4>
+            <p class="card-text text-justify">HP Pavilion Core i5 9th Gen - (8 GB/1 TB HDD/Windows 10 Home/3 GB Graphics/NVIDIA Geforce GTX 1050) 15-bc515TX Gaming Laptop  (15.6 inch, Shadow Black, 1.9 kg)</p>
+            <a href="https://www.flipkart.com/hp-pavilion-core-i5-9th-gen-8-gb-1-tb-hdd-windows-10-home-3-gb-graphics-nvidia-geforce-gtx-1050-15-bc515tx-gaming-laptop/p/itmfg2bpukpuxhwu?pid=COMFG2BPFXGFHHPR&lid=LSTCOMFG2BPFXGFHHPRLQGEIP&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ACOMFMGBP4QYYXEAS%3Bl%3ALSTCOMFMGBP4QYYXEASARX3JW%3Bpt%3App%3Buid%3A944f8d9e-0c17-5eda-e895-e1e5d7f22fe0%3B.COMFG2BPFXGFHHPR&ppt=pp&ppn=pp&ssid=kkgd7wzqts0000001590241127605&otracker=pp_reco_Similar%2BProducts_12_Similar%2BProducts_COMFG2BPFXGFHHPR_productRecommendation%2Fsimilar_11&otracker1=pp_reco_NA_productRecommendation%2Fsimilar_Similar%2BProducts_DESKTOP_HORIZONTAL_productCard_cc_12_NA_view-all&cid=COMFG2BPFXGFHHPR" class="btn btn-primary">See details</a>
+           </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-12">   
+        <div class="card mb-5" >
+           <img class="card-img-top" src="asusvivo.png" alt="Card image">
+           <div class="card-body">
+            <h4 class="card-title">Asus Vivobook</h4>
+            <p class="card-text text-justify">Asus VivoBook Gaming Core i5 9th Gen - (8 GB + 32 GB Optane/512 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA Geforce GTX 1050) F571GD-BQ368T Gaming Laptop  (15.6 inch, Star Black, 2.14 kg)</p>
+            <a href="https://www.flipkart.com/asus-vivobook-gaming-core-i5-9th-gen-8-gb-32-optane-512-ssd-windows-10-home-4-graphics-nvidia-geforce-gtx-1050-f571gd-bq368t-laptop/p/itm610800f11cd09?pid=COMFNEK5Y8P3H7KR&lid=LSTCOMFNEK5Y8P3H7KR196TQM&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ACOMFHNY8Z7C9DGU6%3Bl%3ALSTCOMFHNY8Z7C9DGU6JLJSNJ%3Bpt%3App%3Buid%3A5204316f-29b0-0f11-9cb2-fe7f6fffd14a%3B.COMFNEK5Y8P3H7KR.LSTCOMFNEK5Y8P3H7KR196TQM&ppt=pp&ppn=pp&ssid=n3amkecvo00000001590302657001&otracker=pp_reco_Similar%2BProducts_6_32.productCard.PMU_HORIZONTAL_Similar%2BProducts_COMFNEK5Y8P3H7KR.LSTCOMFNEK5Y8P3H7KR196TQM_productRecommendation%2Fsimilar_5&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_6_NA_view-all&cid=COMFNEK5Y8P3H7KR.LSTCOMFNEK5Y8P3H7KR196TQM" class="btn btn-primary">See details</a>
+           </div>
+        </div>
+      </div> 
+
+      <div class="col-lg-4 col-md-4 col-12">   
+        <div class="card mb-5" >
+           <img class="card-img-top" src="predator.png" alt="Card image">
+           <div class="card-body">
+            <h4 class="card-title">Acer Predator</h4>
+            <p class="card-text text-justify">Acer Predator Helios 300 Core i5 8th Gen - (8 GB/1 TB HDD/128 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA Geforce GTX 1050Ti) PH315-51 55xx Gaming Laptop (15.6 inch, Obsidian Black, 2.5 kg)</p>
+            <a href="https://www.flipkart.com/acer-predator-helios-300-core-i5-8th-gen-8-gb-1-tb-hdd-128-gb-ssd-windows-10-home-4-graphics-nvidia-geforce-gtx-1050ti-ph315-51-ph315-51-51v7-ph315-51-55xx-gaming-laptop/p/itm913399b8faf3d?pid=COMF5NVPQAZDMZFB&lid=LSTCOMF5NVPQAZDMZFBBVX5AO&marketplace=FLIPKART&fm=" class="btn btn-primary">See details</a>
+           </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-12">   
+        <div class="card mb-5" >
+           <img class="card-img-top" src="lenovo.png" alt="Card image">
+           <div class="card-body">
+            <h4 class="card-title">Lenovo Ideapad</h4>
+            <p class="card-text text-justify">Lenovo Ideapad L340 Core i7 9th Gen - (8 GB/1 TB HDD/128 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA Geforce GTX 1650) L340-15IRH Gaming Laptop  (15.6 inch, Black, 2.2 kg, With MS Office)</p>
+            <a href="https://www.flipkart.com/lenovo-ideapad-l340-core-i5-9th-gen-8-gb-1-tb-hdd-windows-10-home-4-gb-graphics-nvidia-geforce-gtx-1650-l340-15irh-n18p-gaming-laptop/p/itm1a92389f24715?pid=COMFHSG9VJWFRYUH&lid=LSTCOMFHSG9VJWFRYUHQDNJQC&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ACOMFNEK5Y8P3H7KR%3Bl%3ALSTCOMFNEK5Y8P3H7KR196TQM%3Bpt%3App%3Buid%3A8e2176bd-8d53-6ba5-0d60-039d1cc6356f%3B.COMFHSG9VJWFRYUH.LSTCOMFHSG9VJWFRYUHQDNJQC&ppt=pp&ppn=pp&ssid=n3amkecvo00000001590302657001&otracker=pp_reco_Similar%2BProducts_4_32.productCard.PMU_HORIZONTAL_Similar%2BProducts_COMFHSG9VJWFRYUH.LSTCOMFHSG9VJWFRYUHQDNJQC_productRecommendation%2Fsimilar_3&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_4_NA_view-all&cid=COMFHSG9VJWFRYUH.LSTCOMFHSG9VJWFRYUHQDNJQC" class="btn btn-primary">See details</a>
+           </div>
+        </div>
+      </div>
+    
+    </div> 
+-->
+</section>
+
+<!--
+register form in short
+<section class="bg-dark">
+  <article class="py-5">
+  <div class="text-center">
+    <h3 class="display-4 text-white">Join Prime</h3>
+    <p class="text-white">Be the part of us.</p>
+    <button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Join Now</button>
+  </div> 
+  The Modal
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        Modal Header
+        <div class="modal-header">
+          <h4 class="modal-title">Signup</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        Modal body
+        <div class="modal-body">
+          <form action="/action_page.php">
+   <div class="form-group">
+     <label for="email">Email address:</label>
+     <input type="email" class="form-control" placeholder="Enter email" id="email" autocomplete="off">
+   </div>
+   <div class="form-group">
+     <label for="pwd">Password:</label>
+     <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+   </div>
+   <div class="form-group form-check">
+     <label class="form-check-label">
+       <input class="form-check-input" type="checkbox"> Remember me
+     </label>
+   </div>
+   <button type="submit" class="btn btn-primary">Submit</button>
+ </form>
+        </div>
+        
+        Modal footer
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </article>
+</section>
+
+contact us starts-->              
+   <div class="container mb-5">
+    <h1 class="text-center text-capitalize pt-5">Enter your Vehicle Details</h1>
+    <hr class="w-25 mx-auto pt-5"> 
+   
+    <div class="w-50 mx-auto">
+
+  <form action="{{ url_for('predict')}}" method="post">
+   <div class="form-group">
+     <label style="font-size:large;">Year of Purchase:</label>
+     <input class="form-control" placeholder="Enter Year of Purchase" name="Year" id="first" autocomplete="off">
+   </div>
+   <div class="form-group">
+     <label style="font-size:large;">What is the Showroom Price? (In lakhs)</label>
+     <input  class="form-control" placeholder="Enter Showroom Price" id="second" name="Present_Price" required="required" autocomplete="off">
+   </div>
+   <div class="form-group">
+     <label style="font-size:large;"> How Many Kilometers Driven?</label>
+     <input class="form-control" placeholder="Enter Kilometers Driven" id="third" name="Kms_Driven" required="required" autocomplete="off">
+   </div>
+   <div class="form-group">
+     <label style="font-size:large;" >How much owners previously had the vehicle? (In number)</label>
+     <input class="form-control" placeholder="Enter Your Choice" id="fourth" name="Owner" required="required" autocomplete="off" >
+   </div>
+   
+   <div class="form-group">
+    <label style="font-size:large;">What Is the Fuel type?</label><br>
+    <select name="Fuel_Type_Petrol" id="fuel" required="required" style="font-size:large;">
+        <option value="Petrol">Select</option>
+        <option value="Petrol">Petrol</option>
+        <option value="Diesel">Diesel</option>
+        <option value="CNG">CNG</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label style="font-size:large;">Are you A Dealer or Individual?</label><br>
+    <select name="Seller_Type_Individual" id="resea" required="required" style="font-size:large;">
+        <option value="Petrol">Select</option>
+        <option value="Dealer">Dealer</option>
+        <option value="Individual">Individual</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label style="font-size:large;">Transmission type:</label><br>
+    <select name="Transmission_Mannual" id="research" required="required" style="font-size:large;">
+        <option value="Petrol">Choose Type</option>
+        <option value="Mannual">Manual </option>
+        <option value="Automatic">Automatic </option>
+    </select>
+  </div><br>
+   <!--
+   <div class="form-group form-check">
+     <label class="form-check-label">
+       <input class="form-check-input" type="checkbox"> Remember me
+     </label>
+   </div>-->
+<center>
+   <button id="sub" type="submit " class="btn btn-primary">Calculate</button><br><br>
+</center>
+ </form>
+
+    </div>
+</div>
+<!--
+<div style="color:blue">
+    <form action="{{ url_for('predict')}}" method="post">
+        <h2>Predictive analysis of Vehicle Selling Price</h2>
+        <h3>Year</h3>
+        <input id="first" name="Year" type="number ">
+        <h3>What is the Showroom Price?(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
+        <h3>How Many Kilometers Driven ?</h3><input id="third" name="Kms_Driven" required="required">
+        <h3>How much owners previously had the car(0 or 1 or 3) ?</h3><br><input id="fourth" name="Owner" required="required">
+        <h3>What Is the Fuel type?</h3><br><select name="Fuel_Type_Petrol" id="fuel" required="required">
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+            <option value="CNG">CNG</option>
+        </select>
+        <h3>Are you A Dealer or Individual</h3><br><select name="Seller_Type_Individual" id="resea" required="required">
+            <option value="Dealer">Dealer</option>
+            <option value="Individual">Individual</option>
+        </select>
+        <h3>Transmission type</h3><br><select name="Transmission_Mannual" id="research" required="required">
+            <option value="Mannual">Manual Car</option>
+            <option value="Automatic">Automatic Car</option>
+        </select>
+        <br><br><button id="sub" type="submit ">Calculate the Selling Price</button>
+        <br>
+
+
+
+
+    </form>
+
+
+
+    <br><br><h3>{{ prediction_text }}<h3>
+</div>-->
+
+<!--
+<footer>
+  <p class="text-center bg-dark text-white">@copyright Ritik Sharma Personal</p>
+</footer>
+-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
